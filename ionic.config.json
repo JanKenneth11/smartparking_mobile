@@ -1,0 +1,7 @@
+{
+  "name": "ParkingSystemMobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
