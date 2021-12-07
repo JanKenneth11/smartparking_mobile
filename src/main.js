@@ -1,6 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
+import store from './store';
+
+import axios from './axios';
+import ModalLayout from './components/ConfirmationLayout.vue';
+import TypeLayout from './components/BookingTypesLayout.vue';
 
 import { IonicVue } from '@ionic/vue';
 
@@ -22,11 +27,18 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './theme/fonts.css';
 
 const app = createApp(App)
-  .use(IonicVue)
-  .use(router);
-  
+    .use(IonicVue)
+    .use(router)
+    .use(store);
+
+
+app.config.globalProperties.$axios = axios;
+app.component('confirmation-layout', ModalLayout)
+app.component('type-layout', TypeLayout)
+
 router.isReady().then(() => {
-  app.mount('#app');
+    app.mount('#app');
 });

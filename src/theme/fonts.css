@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url('../assets/fonts/NexaRegular.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaLight';
+    src: url('../assets/fonts/NexaLight.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url('../assets/fonts/NexaBook.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
